@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Booking</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1>Appointment Booking</h1>
+	<hr>
+
+
+	<div class="advisor">
+		<!-- Counsellor informaiton -->
+		<div style="float:left; width:48%;">
+			<h2>Academic Advisors</h2>
+			<div id="advisorInfo">Advisor info here</div><br>
+
+			<input type="button" value="Next" onclick="nextAdvisor();">
+
+		</div>
+
+		<!-- Appointments available -->
+		<div style="float:right; width: 48%;">
+			<h2>Availability:</h2>
+			<div id="advisorTimes">Appointments here </div><br>
+
+		</div>
+	</div>
+	<div class="appointment">
+		<h2>Booked Appointments:</h2>
+		<div id="apptOutput">Appointment info here</div><br>
+		<input type="button" value="Next" onclick="nextAppoint();">
+	</div>
+
+	<!-- Booking form -->
+	<div>
+		<h2>Book an Appointment</h2>
+		Student Name: <input id="aptName" type="text"><br><br>
+		Appointment Time (choose an available time from this advisor):
+		<input id="aptTime" type="number"><br><br>
+		Type: <input id="aptService" type="text"><br><br>
+		<input type="button" value="Book" onclick="makeAppointmentt();">
+	</div>
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
